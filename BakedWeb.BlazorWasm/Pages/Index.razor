@@ -1,5 +1,24 @@
 ﻿@page "/"
+@using Blazor.Extensions.Canvas.Canvas2D
+@using Blazor.Extensions
 
 <PageTitle>Index</PageTitle>
 
-<canvas id="canvas"></canvas>
+<BECanvas Width="800" Height="500" @ref="canvasReference"></BECanvas>
+
+@code
+{
+    private BECanvasComponent canvasReference;
+    private Canvas2DContext canvasContext;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        canvasContext = await canvasReference.CreateCanvas2DAsync();
+        await canvasContext.SetFillStyleAsync("green");
+
+        await canvasContext.FillRectAsync(10, 100, 100, 100);
+
+        await canvasContext.SetFontAsync("48px serif");
+        await canvasContext.StrokeTextAsync("Hello Blazor!!!", 10, 100);
+    }
+}
