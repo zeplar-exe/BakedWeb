@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakedWeb", "BakedWeb\BakedW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakedWeb.BlazorWasm", "BakedWeb.BlazorWasm\BakedWeb.BlazorWasm.csproj", "{72188695-3DA4-4C04-8B2E-478C53F027B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakedWeb.ApiTests", "BakedWeb.ApiTests\BakedWeb.ApiTests.csproj", "{7F8BF88B-2E66-4BF9-B635-918187309D10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{72188695-3DA4-4C04-8B2E-478C53F027B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72188695-3DA4-4C04-8B2E-478C53F027B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72188695-3DA4-4C04-8B2E-478C53F027B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F8BF88B-2E66-4BF9-B635-918187309D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8BF88B-2E66-4BF9-B635-918187309D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8BF88B-2E66-4BF9-B635-918187309D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8BF88B-2E66-4BF9-B635-918187309D10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
